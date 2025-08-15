@@ -1,6 +1,9 @@
 
 -- FIRST COLUMN -> unique
 --sql SQL SYNTAX variable in small
+-- SERIAL ->
+-- UUID ->random 16 or 18 
+-- random 
 CREATE TABLE IF NOT EXISTS student(
     id SERIAL PRIMARY KEY,
     name TEXT,
