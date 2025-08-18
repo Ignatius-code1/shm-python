@@ -16,8 +16,8 @@
 -- ADD THE DATA
 -- ALTER STAMENT TO CONSTRAIN THE COLUMN
 
-ALTER TABLE student drop
-COLUMN is_married;
+-- ALTER TABLE student drop
+-- COLUMN is_married;
 
 -- COMMON SENSE
 --
