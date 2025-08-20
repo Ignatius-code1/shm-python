@@ -1,5 +1,6 @@
 import sqlite3
 
+
 class LITE:
     def __init__(self):
         db_path="/home/arthur-codex/Documents/DEV/MORINGA/SHM/shm-python/orm/lite.db"

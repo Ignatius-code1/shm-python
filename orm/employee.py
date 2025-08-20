@@ -1,5 +1,11 @@
 from db import PG
 
+#custom orm
+#Object Relational Mapper
+
+## Done---> You Can
+## ORM -> SQLALCHEMY
+## PYTHON
 class Employee():
 
     def __init__(self):
