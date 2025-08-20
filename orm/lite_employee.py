@@ -1,35 +1,35 @@
-from db import PG
+from lite import LITE
 
 class Employee():
 
     def __init__(self):
-        pg=PG()
+        lite=LITE()
         
         query="""
             CREATE TABLE IF NOT EXISTS employee(
-              id BIGSERIAL PRIMARY KEY,
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
               name TEXT NOT NULL,
               email TEXT NOT NULL UNIQUE
             )
         """
-        pg.pg_query(query=query)
+        lite.lite_query(query=query)
     
     def add(self,name,email):
-        pg=PG()
+        lite=LITE()
         query="""
           INSERT INTO employee
           (name,email)
-          VALUES  (%s,%s)
+          VALUES  (?,?)
         """
 
-        pg.pg_query(query=query,params=(name,email))
+        lite.lite_query(query=query,params=(name,email))
 
     def all(self):
-        pg=PG()
+        lite=LITE()
         query="""
           SELECT * FROM employee
         """
-        results=pg.pg_query(query=query)
+        results=lite.lite_query(query=query)
         #print(results)
         for employee in results:
             print(employee)
@@ -48,18 +48,21 @@ emp1=Employee()
 #Delete
 # emp1.add(name="Marry",email="marry@gmail.com")
 
-# while True:
-#     name=input("Enter employee name:")
-#     email=input("Enter employee email:")
-#     emp1.add(name=name,email=email)
+while True:
+    name=input("Enter employee name:")
+    email=input("Enter employee email:")
+    emp1.add(name=name,email=email)
 
-#     print("Employee added ")
-#     print("")
-#     another=input("Enter y to add another ?:")
-#     if another=="y" or another=="Y":
-#         continue
-#     break
+    print("Employee added ")
+    print("")
+    print("ALL EMPLYEES")
+    emp1.all()
+    print("---------")
+    another=input("Enter y to add another ?:")
+    if another=="y" or another=="Y":
+        continue
+    break
 
 # READ, READ. UPDATE()
 
-emp1.all()
+# emp1.all()
