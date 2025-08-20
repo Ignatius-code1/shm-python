@@ -19,7 +19,7 @@ class PG:
             conninfo=self.credentials,
             min_size=1,
             max_size=5,
-            timeout=300,
+            timeout=30,
             open=True
         )
     

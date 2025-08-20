@@ -1,9 +1,10 @@
---ALTER STATEMENT
+-- ALTER STATEMENT
 -- ALTER TABLE <table> <instruction<add, drop> <column>>
 -- Common Sense
--- ALTER TABLE student 
--- ADD 
--- pocket_money INTEGER;
+
+ALTER TABLE student 
+ADD 
+pocket_money INTEGER;
 -- DEFAULT VALUE or MAKE IT NULL
 -- UNIQUE
 
@@ -20,5 +21,5 @@
 -- COLUMN is_married;
 
 -- COMMON SENSE
---
+
 
