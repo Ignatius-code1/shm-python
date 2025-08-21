@@ -6,6 +6,11 @@ from engine import engine
 
 #migration -> alter -> 
 #SQL-> ALMEBIC
+# SQL-> ALEMBIC
+# FLASK->SQLALCHEMY
+
+#--> ALEMBIC DB MANAGER MANAGE YOUR DB FROM CODE
+#--- > MIGRATIONS (GIT)
 
 class Base(DeclarativeBase):
     pass
