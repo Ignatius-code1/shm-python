@@ -16,9 +16,3 @@ DATABASE_URL=URL.create(**db_credentials)
 #create engine
 engine=create_engine(DATABASE_URL,echo=True,future=True)
 
-with engine.connect() as conn:
-    result=conn.execute(text("SELECT * FROM employee"))
-    rows=result.fetchall()
-
-    for row in rows:
-        print(row)
