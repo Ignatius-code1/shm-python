@@ -78,9 +78,9 @@ class Human():
 
     @classmethod
     def get_general_info(cls):
-        print("Species",cls.species)
-        print("Species",cls.genus)
-        print("Species",cls.count)
+          print("Species",cls.species)
+          print("Species",cls.genus)
+          print("Species",cls.count)
 
 #adam=Human(name="adam",gender="Male") #object from a class
 adam=Human(name="adam",gender="Male")

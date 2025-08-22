@@ -1,0 +1,8 @@
+
+CREATE TABLE fggfdg(
+    id SERIAL PRIMARY KEY
+);
+
+CREATE TABLE vbcbcvb(
+    id SERIAL PRIMARY KEY
+);
