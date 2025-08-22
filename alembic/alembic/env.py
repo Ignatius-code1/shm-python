@@ -7,8 +7,12 @@ from sqlalchemy import pool
 
 from alembic import context
 
-
-sys.path.append("/home/arthur-codex/Documents/DEV/MORINGA/SHM/shm-python/alembic/app")
+#relative
+current_path=os.path.dirname(__file__)
+newPath=os.path.join(current_path,"../app")
+calculated_abs_path=os.path.abspath(newPath)
+print(newPath)
+sys.path.append(calculated_abs_path)
 
 from app import Base
 from app.models import *
